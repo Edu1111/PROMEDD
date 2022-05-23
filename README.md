@@ -1,1 +1,1 @@
-# PROMEDD
+# Promed
