@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>ADIVINA EL NUMERO</title>
+</head>
+
+<body style="background-color:#DBDFFD;">
+  <h1>POR FAVOR DIGITAR LA CLAVE </h1>
+
+  <p>Digita la clave:</p>
+
+  <div class="form">
+    <label for="guessField">Clave </label>
+    <input type="text" id="guessField" class="guessField">
+    <input type="submit" value="confirmar" class="guessSubmit" id="submitguess">
+  </div>
+  <script type = "text/javascript">
+
+    // clave
+    var y = 427;
+    var letr = "LRP";
+    var defi = letr + y;
+    // Contador
+    var guess = 1;
+
+    document.getElementById("submitguess").onclick = function(){
+
+   // number guessed by user
+   var x = document.getElementById("guessField").value;
+
+   if(x == defi)
+   {
+       alert("Feliciades la clave es correcta");
+   }
+   else if(x!=y)
+   {
+       guess++;
+       alert("Clave incorrecta");
+   }
+
+}
+</script>
+</body>
+
+</html>
